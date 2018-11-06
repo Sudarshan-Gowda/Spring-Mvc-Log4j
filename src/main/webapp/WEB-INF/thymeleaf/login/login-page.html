@@ -1,6 +1,7 @@
 <html>
 <head>
-<title>ThymeLeaf Dialect</title>
+<title>Spring Mvc Log4j Example</title>
+<link rel="icon" th:href="@{/resources/images/sudarshan-logo.png}" />
 </head>
 <body>
 	<!--  added for loading symbol display in screen  -->
@@ -8,10 +9,13 @@
 		<div class="header">
 			<div th:substituteBy="login/login-header" th:remove="tag"></div>
 		</div>
+
 		<div class="container">
 			<div id="star-msg">
-				<span>Log file Is created under the path : </span><span
-					th:text="${msg}"></span>
+				<marquee>
+					<span>Log file Is created under the path : </span><span
+						th:text="${msg}"></span>
+				</marquee>
 			</div>
 		</div>
 
